@@ -1,0 +1,9 @@
+$ ssh EkaterinaAdishcheva@bigdatamasters.ml
+[EkaterinaAdishcheva@edge2 ~]$ hdfs dfs -mkdir /user/EkaterinaAdishcheva/hwzero
+[EkaterinaAdishcheva@edge2 ~]$ hdfs dfs -chmod 700  /user/EkaterinaAdishcheva/hwzero
+[EkaterinaAdishcheva@edge2 ~]$ echo "EkaterinaAdishcheva" > hwzero.txt
+[EkaterinaAdishcheva@edge2 ~]$ hdfs dfs -put hwzero.txt /user/EkaterinaAdishcheva/hwzero
+[EkaterinaAdishcheva@edge2 ~]$ hdfs dfs -ls /user/EkaterinaAdishcheva/hwzero
+Found 1 items
+-rw-r--r--   3 EkaterinaAdishcheva EkaterinaAdishcheva         20 2023-02-19 09:56 /user/EkaterinaAdishcheva/hwzero/hwzero.txt
+[EkaterinaAdishcheva@edge2 ~]$ checker.sh 0
